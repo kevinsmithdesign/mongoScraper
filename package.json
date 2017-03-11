@@ -1,0 +1,29 @@
+{
+  "name": "mongoscraper",
+  "version": "1.0.0",
+  "description": "scrapes articles from a third party website. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrkevinsmithdesign/mongoScraper.git"
+  },
+  "author": "Kevin Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrkevinsmithdesign/mongoScraper/issues"
+  },
+  "homepage": "https://github.com/mrkevinsmithdesign/mongoScraper#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.8.6",
+    "morgan": "^1.8.1",
+    "request": "^2.81.0"
+  }
+}
