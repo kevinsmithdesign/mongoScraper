@@ -2,11 +2,12 @@
 var express = require('express');
 var exphbs = require('express-handlebars');
 var mongoose = require('mongoose');
-var app = express();
 var request = require('request');
 var cheerio = require('cheerio');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+
+var app = express();
 
 var scraper = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2' 
 var url = 'http://www.newyorker.com/popular?intcid=mod-most-popular'
@@ -26,7 +27,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //connect to db
- mongoose.connect('mongodb://'); 
+ mongoose.connect('mongodb://heroku_s3pph1qd:munmaalmkmkse33vvv7qtk7s99@ds017636.mlab.com:17636/heroku_s3pph1qd'); 
 
 var db = mongoose.connection;
 
